@@ -4,7 +4,7 @@ public class User {
 
 
     //two attribute for users :
-    //id and full name
+    //id and full name user
     private int id;
     private String fullName;
 
