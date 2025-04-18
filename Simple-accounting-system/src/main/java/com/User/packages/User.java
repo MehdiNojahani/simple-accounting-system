@@ -1,4 +1,8 @@
-package com.Accounting.packages;
+package com.User.packages;
+
+/*
+This class
+ */
 
 public class User {
 
@@ -7,6 +11,7 @@ public class User {
     //id and full name user
     private int id;
     private String fullName;
+
 
     //class constructor :
     public User() {
@@ -33,4 +38,6 @@ public class User {
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
+
+
 }
