@@ -21,16 +21,14 @@ public abstract class Transaction {
     //Constructor
 
 
-    public Transaction(int id, String type, double amount, LocalDate date, Account account) {
+    public Transaction(int id, String type, double amount, Account account) {
         this.id = id;
         this.type = type;
         this.amount = amount;
-        this.date = date;
         this.account = account;
     }
-
-    public Transaction() {
-    }
+    //this method transaction(expense or income) implement by sub_classes
+    public abstract void execute();
 
     //Getter and Setter method
 
@@ -75,8 +73,6 @@ public abstract class Transaction {
         this.account = account;
     }
 
-    //this method transaction(expense or income) implement by sub_classes
-    public abstract void execute();
 
 
 }
