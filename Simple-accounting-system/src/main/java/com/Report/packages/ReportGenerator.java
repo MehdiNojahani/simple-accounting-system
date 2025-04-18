@@ -11,7 +11,7 @@ public class ReportGenerator {
 
 
     //report transaction list method:
-    public static void generateTransactionReport(List<Transaction> transactions){
+    public void generateTransactionReport(List<Transaction> transactions){
 
         System.out.println("-- $$  Transaction Report $$ -- :");
 
@@ -26,13 +26,12 @@ public class ReportGenerator {
     }
 
     //Account Summary method
-    public static void generateAccountSummary(Account account){
+    public void generateAccountSummary(Account account){
         System.out.println("-- $$ Account Summary  $$ -- :");
 
         System.out.println("Account id :" + account.getId());
         System.out.println("Account Name :" + account.getFullName());
-        System.out.println("Account  :" + account.getId());
-        System.out.println("Account id :" + account.getBalance());
+        System.out.println("Account balance :" + account.getBalance());
 
         System.out.println("------------------------------------------------------------");
     }

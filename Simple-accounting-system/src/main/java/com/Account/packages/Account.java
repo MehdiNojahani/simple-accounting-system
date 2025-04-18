@@ -11,6 +11,12 @@ public abstract class Account {
     //account balance for calculate...
     protected double balance;
 
+    public Account(int id, String fullName, double balance) {
+        this.id = id;
+        this.fullName = fullName;
+        this.balance = balance;
+    }
+
     //this method update amount to increase or decrease
     public abstract void updateBalance(double amount);
 
