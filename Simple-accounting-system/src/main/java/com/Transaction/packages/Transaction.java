@@ -1,5 +1,7 @@
 package com.Transaction.packages;
 
+import com.Account.packages.Account;
+
 import java.time.LocalDate;
 
 public abstract class Transaction {
